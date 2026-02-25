@@ -6,8 +6,6 @@
   <title>AI Consultant Salt Lake City | Free AI Workflow Audit | Meghan Vita</title>
   <meta name="description" content="Salt Lake City's trusted AI consultant. Get a free AI Workflow Audit and discover where your business is leaving time and money on the table. Serving SLC businesses." />
   <meta name="keywords" content="AI consultant Salt Lake City, AI optimization Utah, AI workflow consultant SLC, business AI automation Salt Lake City, AI strategy consultant Utah" />
-
-  <!-- Open Graph -->
   <meta property="og:title" content="Free AI Workflow Audit | Meghan Vita – SLC AI Consultant" />
   <meta property="og:description" content="Discover where your business is losing hours to manual work. Book your free AI audit with Salt Lake City's AI optimization expert." />
   <meta property="og:type" content="website" />
@@ -26,312 +24,197 @@
       --light:      #F8F8FC;
       --white:      #FFFFFF;
       --border:     #E2E1EF;
-      --success:    #10B981;
       --radius:     12px;
       --shadow:     0 4px 24px rgba(91,79,232,.12);
       --shadow-lg:  0 12px 48px rgba(91,79,232,.18);
     }
 
     html { scroll-behavior: smooth; }
-
     body {
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      color: var(--dark);
-      background: var(--white);
-      line-height: 1.6;
+      color: var(--dark); background: var(--white); line-height: 1.6;
     }
 
-    /* ── NAV ── */
+    /* NAV */
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: rgba(255,255,255,.92);
-      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,.92); backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
-      padding: 0 5vw;
-      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw; display: flex; align-items: center; justify-content: space-between;
       height: 68px;
     }
-    .nav-logo {
-      font-weight: 800; font-size: 1.1rem;
-      color: var(--brand);
-      letter-spacing: -.5px;
-    }
+    .nav-logo { font-weight: 800; font-size: 1.1rem; color: var(--brand); letter-spacing: -.5px; }
     .nav-logo span { color: var(--dark); }
     .nav-cta {
-      background: var(--brand); color: var(--white);
-      border: none; border-radius: 8px;
-      padding: 10px 22px; font-size: .9rem; font-weight: 700;
-      cursor: pointer; transition: background .2s, transform .15s;
-      text-decoration: none; display: inline-block;
+      background: var(--brand); color: var(--white); border: none; border-radius: 8px;
+      padding: 10px 22px; font-size: .9rem; font-weight: 700; cursor: pointer;
+      transition: background .2s, transform .15s; text-decoration: none; display: inline-block;
     }
     .nav-cta:hover { background: var(--brand-dark); transform: translateY(-1px); }
 
-    /* ── HERO ── */
+    /* HERO */
     .hero {
       background: linear-gradient(135deg, #0F0E1A 0%, #1D1B3A 60%, #2A1F6B 100%);
-      padding: 90px 5vw 100px;
-      position: relative; overflow: hidden;
+      padding: 90px 5vw 100px; position: relative; overflow: hidden;
     }
     .hero::before {
-      content: '';
-      position: absolute; top: -120px; right: -80px;
+      content: ''; position: absolute; top: -120px; right: -80px;
       width: 520px; height: 520px;
       background: radial-gradient(circle, rgba(91,79,232,.35) 0%, transparent 70%);
       pointer-events: none;
     }
     .hero::after {
-      content: '';
-      position: absolute; bottom: -80px; left: 10%;
+      content: ''; position: absolute; bottom: -80px; left: 10%;
       width: 340px; height: 340px;
       background: radial-gradient(circle, rgba(245,158,11,.18) 0%, transparent 70%);
       pointer-events: none;
     }
-
     .hero-inner {
       max-width: 1100px; margin: 0 auto;
       display: grid; grid-template-columns: 1fr 420px; gap: 60px; align-items: center;
       position: relative; z-index: 1;
     }
-
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
       background: rgba(91,79,232,.25); border: 1px solid rgba(91,79,232,.5);
       border-radius: 100px; padding: 6px 16px;
       font-size: .8rem; font-weight: 700; color: #A89FF5;
-      letter-spacing: .5px; text-transform: uppercase;
-      margin-bottom: 24px;
+      letter-spacing: .5px; text-transform: uppercase; margin-bottom: 24px;
     }
-    .hero-badge::before { content: '📍'; font-size: 1em; }
-
+    .hero-badge::before { content: '📍'; }
     .hero h1 {
-      font-size: clamp(2rem, 4vw, 3.1rem);
-      font-weight: 900; line-height: 1.12;
-      color: var(--white);
-      margin-bottom: 22px;
-      letter-spacing: -.5px;
+      font-size: clamp(2rem, 4vw, 3.1rem); font-weight: 900; line-height: 1.12;
+      color: var(--white); margin-bottom: 22px; letter-spacing: -.5px;
     }
     .hero h1 em {
       font-style: normal;
       background: linear-gradient(90deg, #A89FF5, #F59E0B);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      background-clip: text;
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
+    .hero p { font-size: 1.15rem; color: rgba(255,255,255,.72); max-width: 520px; margin-bottom: 36px; }
+    .hero-stats { display: flex; gap: 32px; margin-bottom: 36px; }
+    .stat { display: flex; flex-direction: column; }
+    .stat strong { font-size: 1.8rem; font-weight: 900; color: var(--white); line-height: 1; }
+    .stat span { font-size: .78rem; color: rgba(255,255,255,.5); text-transform: uppercase; letter-spacing: .5px; margin-top: 4px; }
 
-    .hero p {
-      font-size: 1.15rem; color: rgba(255,255,255,.72);
-      max-width: 520px; margin-bottom: 36px;
+    /* BOOKING CARD */
+    .booking-card {
+      background: var(--white); border-radius: 18px; padding: 40px 36px;
+      box-shadow: var(--shadow-lg); position: relative; text-align: center;
     }
-
-    .hero-stats {
-      display: flex; gap: 32px; margin-bottom: 36px;
-    }
-    .stat {
-      display: flex; flex-direction: column;
-    }
-    .stat strong {
-      font-size: 1.8rem; font-weight: 900; color: var(--white);
-      line-height: 1;
-    }
-    .stat span {
-      font-size: .78rem; color: rgba(255,255,255,.5);
-      text-transform: uppercase; letter-spacing: .5px; margin-top: 4px;
-    }
-
-    .hero-subtext {
-      font-size: .85rem; color: rgba(255,255,255,.4);
-      display: flex; align-items: center; gap: 8px;
-    }
-    .hero-subtext::before {
-      content: '🔒';
-    }
-
-    /* ── FORM CARD ── */
-    .form-card {
-      background: var(--white);
-      border-radius: 18px;
-      padding: 36px 32px;
-      box-shadow: var(--shadow-lg);
-      position: relative;
-    }
-    .form-card-label {
+    .booking-card-label {
       position: absolute; top: -16px; left: 50%; transform: translateX(-50%);
-      background: var(--accent);
-      color: var(--dark); font-weight: 800; font-size: .8rem;
-      padding: 6px 18px; border-radius: 100px;
-      white-space: nowrap; letter-spacing: .3px;
+      background: var(--accent); color: var(--dark); font-weight: 800; font-size: .8rem;
+      padding: 6px 18px; border-radius: 100px; white-space: nowrap; letter-spacing: .3px;
     }
-    .form-card h2 {
-      font-size: 1.3rem; font-weight: 800; color: var(--dark);
-      margin-bottom: 6px; text-align: center;
-    }
-    .form-card .form-subhead {
-      font-size: .88rem; color: var(--muted); text-align: center;
-      margin-bottom: 24px;
-    }
+    .booking-card h2 { font-size: 1.4rem; font-weight: 800; color: var(--dark); margin-bottom: 8px; }
+    .booking-card .booking-sub { font-size: .92rem; color: var(--muted); margin-bottom: 28px; line-height: 1.5; }
 
-    .form-group { margin-bottom: 14px; }
-    .form-group label {
-      display: block; font-size: .82rem; font-weight: 700;
-      color: var(--mid); margin-bottom: 6px;
+    .booking-details {
+      display: flex; flex-direction: column; gap: 12px;
+      margin-bottom: 28px; text-align: left;
     }
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      border: 1.5px solid var(--border);
-      border-radius: 8px;
-      padding: 11px 14px;
-      font-size: .92rem;
-      font-family: inherit;
-      color: var(--dark);
-      background: var(--white);
-      transition: border-color .2s, box-shadow .2s;
-      outline: none;
-    }
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      border-color: var(--brand);
-      box-shadow: 0 0 0 3px rgba(91,79,232,.12);
-    }
-    .form-group textarea { resize: vertical; min-height: 72px; }
-
-    .submit-btn {
-      width: 100%; padding: 16px;
-      background: var(--brand); color: var(--white);
-      border: none; border-radius: 10px;
-      font-size: 1rem; font-weight: 800;
-      cursor: pointer; margin-top: 6px;
-      transition: background .2s, transform .15s, box-shadow .2s;
-      box-shadow: 0 4px 16px rgba(91,79,232,.35);
-    }
-    .submit-btn:hover {
-      background: var(--brand-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(91,79,232,.4);
-    }
-    .form-privacy {
-      font-size: .75rem; color: var(--muted); text-align: center;
-      margin-top: 12px;
-    }
-
-    /* ── TRUST BAR ── */
-    .trust-bar {
-      background: var(--light); border-bottom: 1px solid var(--border);
-      padding: 20px 5vw;
-      display: flex; align-items: center; justify-content: center;
-      gap: 48px; flex-wrap: wrap;
-    }
-    .trust-item {
-      display: flex; align-items: center; gap: 10px;
+    .booking-detail {
+      display: flex; align-items: center; gap: 12px;
+      background: var(--light); border-radius: 8px; padding: 12px 16px;
       font-size: .88rem; font-weight: 600; color: var(--mid);
     }
+    .booking-detail .di { font-size: 1.1rem; }
+
+    .book-btn {
+      display: block; width: 100%; padding: 18px;
+      background: var(--brand); color: var(--white);
+      border: none; border-radius: 12px; font-size: 1.05rem; font-weight: 800;
+      text-decoration: none; cursor: pointer;
+      box-shadow: 0 4px 16px rgba(91,79,232,.35);
+      transition: background .2s, transform .15s, box-shadow .2s;
+    }
+    .book-btn:hover {
+      background: var(--brand-dark); transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(91,79,232,.4);
+    }
+    .booking-privacy {
+      font-size: .75rem; color: var(--muted); margin-top: 14px;
+    }
+
+    /* TRUST BAR */
+    .trust-bar {
+      background: var(--light); border-bottom: 1px solid var(--border);
+      padding: 20px 5vw; display: flex; align-items: center; justify-content: center;
+      gap: 48px; flex-wrap: wrap;
+    }
+    .trust-item { display: flex; align-items: center; gap: 10px; font-size: .88rem; font-weight: 600; color: var(--mid); }
     .trust-item .icon { font-size: 1.2rem; }
 
-    /* ── SECTION SHARED ── */
+    /* SECTIONS */
     section { padding: 80px 5vw; }
     .section-inner { max-width: 1100px; margin: 0 auto; }
     .section-label {
       font-size: .78rem; font-weight: 800; letter-spacing: 1px;
-      text-transform: uppercase; color: var(--brand);
-      margin-bottom: 12px;
+      text-transform: uppercase; color: var(--brand); margin-bottom: 12px;
     }
     .section-title {
-      font-size: clamp(1.6rem, 3vw, 2.3rem);
-      font-weight: 900; line-height: 1.2; letter-spacing: -.3px;
-      color: var(--dark); margin-bottom: 16px;
+      font-size: clamp(1.6rem, 3vw, 2.3rem); font-weight: 900; line-height: 1.2;
+      letter-spacing: -.3px; color: var(--dark); margin-bottom: 16px;
     }
-    .section-sub {
-      font-size: 1.05rem; color: var(--muted); max-width: 580px;
-      margin-bottom: 48px;
-    }
+    .section-sub { font-size: 1.05rem; color: var(--muted); max-width: 580px; margin-bottom: 48px; }
 
-    /* ── PROBLEMS ── */
-    .problems { background: var(--white); }
-    .problems-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
+    /* PROBLEMS */
+    .problems-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
     .problem-card {
-      border: 1.5px solid var(--border); border-radius: var(--radius);
-      padding: 28px 24px;
+      border: 1.5px solid var(--border); border-radius: var(--radius); padding: 28px 24px;
       transition: border-color .2s, box-shadow .2s, transform .2s;
     }
-    .problem-card:hover {
-      border-color: var(--brand);
-      box-shadow: var(--shadow);
-      transform: translateY(-3px);
-    }
+    .problem-card:hover { border-color: var(--brand); box-shadow: var(--shadow); transform: translateY(-3px); }
     .problem-icon { font-size: 2rem; margin-bottom: 14px; }
     .problem-card h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: 8px; }
     .problem-card p { font-size: .9rem; color: var(--muted); line-height: 1.5; }
 
-    /* ── HOW IT WORKS ── */
+    /* HOW IT WORKS */
     .how { background: var(--light); }
-    .steps {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px; position: relative;
-    }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
     .step {
-      background: var(--white); border-radius: var(--radius);
-      padding: 32px 24px; text-align: center;
-      box-shadow: 0 2px 12px rgba(0,0,0,.05);
-      position: relative;
+      background: var(--white); border-radius: var(--radius); padding: 32px 24px;
+      text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,.05);
     }
     .step-num {
-      width: 48px; height: 48px;
-      background: var(--brand); color: var(--white);
+      width: 48px; height: 48px; background: var(--brand); color: var(--white);
       border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      font-weight: 900; font-size: 1.1rem;
-      margin: 0 auto 18px;
+      font-weight: 900; font-size: 1.1rem; margin: 0 auto 18px;
     }
     .step h3 { font-size: 1rem; font-weight: 800; margin-bottom: 8px; }
     .step p { font-size: .88rem; color: var(--muted); }
 
-    /* ── WHAT YOU GET ── */
-    .audit-items {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 16px; margin-bottom: 40px;
-    }
+    /* WHAT YOU GET */
+    .audit-items { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 40px; }
     .audit-item {
       display: flex; align-items: flex-start; gap: 14px;
-      background: var(--brand-light); border-radius: 10px;
-      padding: 18px 20px;
+      background: var(--brand-light); border-radius: 10px; padding: 18px 20px;
     }
     .audit-item .check {
-      width: 26px; height: 26px; min-width: 26px;
-      background: var(--brand); color: var(--white);
+      width: 26px; height: 26px; min-width: 26px; background: var(--brand); color: var(--white);
       border-radius: 50%; display: flex; align-items: center; justify-content: center;
       font-size: .8rem; font-weight: 900; margin-top: 2px;
     }
     .audit-item-text strong { font-size: .95rem; display: block; margin-bottom: 3px; }
     .audit-item-text span { font-size: .83rem; color: var(--muted); }
 
-    /* ── RESULTS ── */
+    /* RESULTS */
     .results { background: var(--dark); }
     .results .section-title { color: var(--white); }
     .results .section-sub { color: rgba(255,255,255,.55); }
     .results .section-label { color: var(--accent); }
-    .results-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+    .results-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
     .result-card {
-      background: rgba(255,255,255,.05);
-      border: 1px solid rgba(255,255,255,.1);
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1);
       border-radius: var(--radius); padding: 28px 24px;
     }
-    .result-card .num {
-      font-size: 2.2rem; font-weight: 900; color: var(--accent);
-      line-height: 1; margin-bottom: 8px;
-    }
+    .result-card .num { font-size: 2.2rem; font-weight: 900; color: var(--accent); line-height: 1; margin-bottom: 8px; }
     .result-card h3 { font-size: .95rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
     .result-card p { font-size: .85rem; color: rgba(255,255,255,.5); }
 
-    /* ── ABOUT ── */
-    .about-inner {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
-    }
+    /* ABOUT */
+    .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
     .about-img {
       background: linear-gradient(135deg, var(--brand-light), var(--brand));
       border-radius: 18px; aspect-ratio: 4/3;
@@ -340,69 +223,43 @@
     }
     .about h2 { font-size: 1.8rem; font-weight: 900; margin-bottom: 16px; }
     .about p { font-size: .97rem; color: var(--muted); margin-bottom: 16px; line-height: 1.7; }
-    .about-tags {
-      display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px;
-    }
-    .tag {
-      background: var(--brand-light); color: var(--brand);
-      border-radius: 100px; padding: 6px 16px;
-      font-size: .8rem; font-weight: 700;
-    }
+    .about-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .tag { background: var(--brand-light); color: var(--brand); border-radius: 100px; padding: 6px 16px; font-size: .8rem; font-weight: 700; }
 
-    /* ── FAQ ── */
+    /* FAQ */
     .faq { background: var(--light); }
     .faq-list { max-width: 720px; }
-    .faq-item {
-      border: 1.5px solid var(--border); border-radius: var(--radius);
-      margin-bottom: 12px; overflow: hidden;
-    }
+    .faq-item { border: 1.5px solid var(--border); border-radius: var(--radius); margin-bottom: 12px; overflow: hidden; }
     .faq-q {
       padding: 20px 24px; font-weight: 700; font-size: .97rem;
       cursor: pointer; display: flex; justify-content: space-between; align-items: center;
       background: var(--white);
     }
     .faq-q::after { content: '↓'; font-size: .9rem; color: var(--brand); transition: transform .2s; }
-    .faq-a {
-      display: none; padding: 0 24px 20px;
-      font-size: .9rem; color: var(--muted); line-height: 1.6;
-      background: var(--white);
-    }
+    .faq-a { display: none; padding: 0 24px 20px; font-size: .9rem; color: var(--muted); line-height: 1.6; background: var(--white); }
     .faq-item.open .faq-q::after { transform: rotate(180deg); }
     .faq-item.open .faq-a { display: block; }
 
-    /* ── FINAL CTA ── */
+    /* FINAL CTA */
     .final-cta {
       background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
       text-align: center; padding: 90px 5vw;
     }
-    .final-cta h2 {
-      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-      font-weight: 900; color: var(--white); margin-bottom: 16px;
-    }
-    .final-cta p {
-      font-size: 1.1rem; color: rgba(255,255,255,.75); margin-bottom: 36px;
-    }
+    .final-cta h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 900; color: var(--white); margin-bottom: 16px; }
+    .final-cta p { font-size: 1.1rem; color: rgba(255,255,255,.75); margin-bottom: 36px; }
     .final-cta .cta-btn {
       display: inline-block; background: var(--white); color: var(--brand);
-      padding: 18px 44px; border-radius: 12px;
-      font-size: 1.1rem; font-weight: 900;
-      text-decoration: none;
-      box-shadow: 0 8px 32px rgba(0,0,0,.2);
+      padding: 18px 44px; border-radius: 12px; font-size: 1.1rem; font-weight: 900;
+      text-decoration: none; box-shadow: 0 8px 32px rgba(0,0,0,.2);
       transition: transform .15s, box-shadow .15s;
     }
-    .final-cta .cta-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 14px 40px rgba(0,0,0,.25);
-    }
+    .final-cta .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(0,0,0,.25); }
 
-    /* ── FOOTER ── */
-    footer {
-      background: var(--dark); color: rgba(255,255,255,.45);
-      padding: 32px 5vw; text-align: center; font-size: .82rem;
-    }
+    /* FOOTER */
+    footer { background: var(--dark); color: rgba(255,255,255,.45); padding: 32px 5vw; text-align: center; font-size: .82rem; }
     footer a { color: rgba(255,255,255,.55); text-decoration: none; }
 
-    /* ── RESPONSIVE ── */
+    /* RESPONSIVE */
     @media (max-width: 768px) {
       .hero-inner { grid-template-columns: 1fr; gap: 40px; }
       .hero { padding: 60px 5vw 70px; }
@@ -411,15 +268,6 @@
       .audit-items { grid-template-columns: 1fr; }
       .trust-bar { gap: 24px; }
     }
-
-    /* ── SUCCESS MESSAGE ── */
-    .success-msg {
-      display: none;
-      text-align: center; padding: 30px 20px;
-    }
-    .success-msg .success-icon { font-size: 3rem; margin-bottom: 16px; }
-    .success-msg h3 { font-size: 1.3rem; font-weight: 800; color: var(--success); margin-bottom: 8px; }
-    .success-msg p { font-size: .9rem; color: var(--muted); }
   </style>
 </head>
 <body>
@@ -427,7 +275,7 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo">Meghan <span>Vita</span></div>
-  <a href="#audit-form" class="nav-cta">Get Free AI Audit →</a>
+  <a href="https://calendar.app.google/xkcsNaVfipqbezfz5" target="_blank" class="nav-cta">Book Free Audit →</a>
 </nav>
 
 <!-- HERO -->
@@ -438,70 +286,29 @@
       <h1>Your Business Is <em>Leaving Hours &amp; Money</em> on the Table — Let's Fix That</h1>
       <p>I help SLC businesses find exactly where AI can save time, cut costs, and scale without adding headcount. No jargon. No fluff. Real results.</p>
       <div class="hero-stats">
-        <div class="stat">
-          <strong>12+</strong>
-          <span>Hours saved per client weekly</span>
-        </div>
-        <div class="stat">
-          <strong>2</strong>
-          <span>Active SLC clients</span>
-        </div>
-        <div class="stat">
-          <strong>100%</strong>
-          <span>Local & hands-on</span>
-        </div>
+        <div class="stat"><strong>12+</strong><span>Hours saved per client weekly</span></div>
+        <div class="stat"><strong>2</strong><span>Active SLC clients</span></div>
+        <div class="stat"><strong>100%</strong><span>Local & hands-on</span></div>
       </div>
-      <div class="hero-subtext">No commitment. 100% free. Takes about 30 minutes.</div>
     </div>
 
-    <!-- FORM -->
-    <div class="form-card" id="audit-form">
-      <div class="form-card-label">🎯 Limited spots available</div>
-      <h2>Claim Your Free AI Audit</h2>
-      <p class="form-subhead">Find out where AI can save your business the most time — fast.</p>
+    <!-- BOOKING CARD -->
+    <div class="booking-card">
+      <div class="booking-card-label">🎯 Limited spots each month</div>
+      <h2>Book Your Free AI Audit</h2>
+      <p class="booking-sub">A real 30-minute conversation about where AI can move the needle in your business — no commitment, no pitch.</p>
 
-      <form id="leadForm">
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Jane Smith" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Work Email</label>
-          <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required />
-        </div>
-        <div class="form-group">
-          <label for="company">Company Name</label>
-          <input type="text" id="company" name="company" placeholder="Acme Co." required />
-        </div>
-        <div class="form-group">
-          <label for="industry">Industry</label>
-          <select id="industry" name="industry">
-            <option value="">Select your industry...</option>
-            <option>Healthcare / Medical</option>
-            <option>Real Estate</option>
-            <option>Legal</option>
-            <option>Finance / Accounting</option>
-            <option>Retail / E-Commerce</option>
-            <option>Marketing / Agency</option>
-            <option>Construction / Trades</option>
-            <option>Technology</option>
-            <option>Nonprofit</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="challenge">What's your biggest time sink right now?</label>
-          <textarea id="challenge" name="challenge" placeholder="e.g. We spend hours every week manually writing reports, responding to customer emails..."></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Book My Free AI Audit →</button>
-        <p class="form-privacy">🔒 Your info is safe. Zero spam, ever.</p>
-      </form>
-
-      <div class="success-msg" id="successMsg">
-        <div class="success-icon">🎉</div>
-        <h3>You're on the list!</h3>
-        <p>I'll reach out within 24 hours to schedule your free AI Workflow Audit. Check your inbox for a confirmation.</p>
+      <div class="booking-details">
+        <div class="booking-detail"><span class="di">⏱️</span> 30 minutes</div>
+        <div class="booking-detail"><span class="di">💰</span> Completely free</div>
+        <div class="booking-detail"><span class="di">📍</span> In-person (SLC) or video call</div>
+        <div class="booking-detail"><span class="di">📋</span> Walk away with a real AI roadmap</div>
       </div>
+
+      <a href="https://calendar.app.google/xkcsNaVfipqbezfz5" target="_blank" class="book-btn">
+        Pick a Time That Works →
+      </a>
+      <p class="booking-privacy">🔒 No spam. Just a calendar invite.</p>
     </div>
   </div>
 </section>
@@ -509,17 +316,17 @@
 <!-- TRUST BAR -->
 <div class="trust-bar">
   <div class="trust-item"><span class="icon">📍</span> Based in Salt Lake City, UT</div>
-  <div class="trust-item"><span class="icon">⚡</span> Response in under 24 hours</div>
+  <div class="trust-item"><span class="icon">⚡</span> Book a time instantly</div>
   <div class="trust-item"><span class="icon">✅</span> No sales pressure, ever</div>
   <div class="trust-item"><span class="icon">🤝</span> Local, in-person available</div>
 </div>
 
 <!-- PROBLEMS -->
-<section class="problems">
+<section>
   <div class="section-inner">
     <div class="section-label">Sound Familiar?</div>
     <h2 class="section-title">Most SLC Businesses Are Drowning in Work That AI Could Handle</h2>
-    <p class="section-sub">If any of these feel true, you're a perfect candidate for an AI audit.</p>
+    <p class="section-sub">If any of these feel true, you're a perfect candidate for a free AI audit.</p>
     <div class="problems-grid">
       <div class="problem-card">
         <div class="problem-icon">📋</div>
@@ -534,7 +341,7 @@
       <div class="problem-card">
         <div class="problem-icon">📈</div>
         <h3>Ready to Scale Without Just Hiring More</h3>
-        <p>You want to grow without your expenses ballooning. Smart AI workflows can 2–3x your team's output.</p>
+        <p>You want to grow without expenses ballooning. Smart AI workflows can 2–3x your team's output.</p>
       </div>
       <div class="problem-card">
         <div class="problem-icon">🤯</div>
@@ -554,13 +361,13 @@
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
-        <h3>Fill Out the Form</h3>
-        <p>Takes 2 minutes. Tell me your biggest time sink and I'll come prepared with ideas specific to your business.</p>
+        <h3>Pick a Time</h3>
+        <p>Book directly on my calendar — no back and forth emails. Takes 30 seconds.</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
         <h3>30-Min Audit Call</h3>
-        <p>We dig into your current workflows — I spot the exact places where AI can save you hours each week. Can be in-person (SLC) or virtual.</p>
+        <p>We dig into your workflows. I spot the exact places where AI can save you hours each week. In-person in SLC or virtual.</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
@@ -580,48 +387,30 @@
     <div class="audit-items">
       <div class="audit-item">
         <div class="check">✓</div>
-        <div class="audit-item-text">
-          <strong>Workflow Bottleneck Mapping</strong>
-          <span>We identify which tasks are eating the most time and money</span>
-        </div>
+        <div class="audit-item-text"><strong>Workflow Bottleneck Mapping</strong><span>We identify which tasks are eating the most time and money</span></div>
       </div>
       <div class="audit-item">
         <div class="check">✓</div>
-        <div class="audit-item-text">
-          <strong>AI Readiness Assessment</strong>
-          <span>Where your business is set up to benefit from AI — right now</span>
-        </div>
+        <div class="audit-item-text"><strong>AI Readiness Assessment</strong><span>Where your business is set up to benefit from AI right now</span></div>
       </div>
       <div class="audit-item">
         <div class="check">✓</div>
-        <div class="audit-item-text">
-          <strong>Tool Recommendations</strong>
-          <span>Specific AI tools matched to your actual workflow — no generic advice</span>
-        </div>
+        <div class="audit-item-text"><strong>Tool Recommendations</strong><span>Specific AI tools matched to your actual workflow — no generic advice</span></div>
       </div>
       <div class="audit-item">
         <div class="check">✓</div>
-        <div class="audit-item-text">
-          <strong>Quick Win Identification</strong>
-          <span>3–5 things you could implement this week to start saving time</span>
-        </div>
+        <div class="audit-item-text"><strong>Quick Win Identification</strong><span>3–5 things you could implement this week to start saving time</span></div>
       </div>
       <div class="audit-item">
         <div class="check">✓</div>
-        <div class="audit-item-text">
-          <strong>ROI Estimate</strong>
-          <span>A realistic picture of time and money you could recover with AI</span>
-        </div>
+        <div class="audit-item-text"><strong>ROI Estimate</strong><span>A realistic picture of time and money you could recover with AI</span></div>
       </div>
       <div class="audit-item">
         <div class="check">✓</div>
-        <div class="audit-item-text">
-          <strong>Custom AI Roadmap</strong>
-          <span>A prioritized plan you own — whether we work together or not</span>
-        </div>
+        <div class="audit-item-text"><strong>Custom AI Roadmap</strong><span>A prioritized plan you own — whether we work together or not</span></div>
       </div>
     </div>
-    <a href="#audit-form" class="nav-cta" style="font-size:1rem; padding:16px 36px;">Yes, I Want My Free Audit →</a>
+    <a href="https://calendar.app.google/xkcsNaVfipqbezfz5" target="_blank" class="nav-cta" style="font-size:1rem; padding:16px 36px;">Book My Free Audit →</a>
   </div>
 </section>
 
@@ -632,40 +421,24 @@
     <h2 class="section-title">What Happens When Salt Lake City Businesses Go AI-First</h2>
     <p class="section-sub">Real outcomes from businesses I work with here in Utah.</p>
     <div class="results-grid">
-      <div class="result-card">
-        <div class="num">12+ hrs</div>
-        <h3>Saved Per Week</h3>
-        <p>Typical time recovered from manual workflows in the first 60 days</p>
-      </div>
-      <div class="result-card">
-        <div class="num">3x</div>
-        <h3>Output Per Employee</h3>
-        <p>Teams producing significantly more without adding headcount</p>
-      </div>
-      <div class="result-card">
-        <div class="num">30 days</div>
-        <h3>To First Real ROI</h3>
-        <p>Average time from kickoff to a measurable, dollar-denominated result</p>
-      </div>
-      <div class="result-card">
-        <div class="num">100%</div>
-        <h3>Local & Hands-On</h3>
-        <p>I work directly with your team — in-person or virtual, your choice</p>
-      </div>
+      <div class="result-card"><div class="num">12+ hrs</div><h3>Saved Per Week</h3><p>Typical time recovered from manual workflows in the first 60 days</p></div>
+      <div class="result-card"><div class="num">3x</div><h3>Output Per Employee</h3><p>Teams producing significantly more without adding headcount</p></div>
+      <div class="result-card"><div class="num">30 days</div><h3>To First Real ROI</h3><p>Average time from kickoff to a measurable, dollar-denominated result</p></div>
+      <div class="result-card"><div class="num">100%</div><h3>Local & Hands-On</h3><p>I work directly with your team — in-person or virtual, your choice</p></div>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="about">
+<section>
   <div class="section-inner about-inner">
     <div class="about-img">👋</div>
-    <div>
+    <div class="about">
       <div class="section-label">About Meghan</div>
       <h2>Salt Lake City's AI Optimization Expert</h2>
       <p>I'm Meghan Vita — an AI workflow consultant based right here in SLC. I work hands-on with local businesses to implement AI that actually fits the way they operate, not generic chatbot setups or expensive enterprise software no one uses.</p>
       <p>I work with a small roster of clients so every engagement gets my full attention. My clients see real results — not just cool demos — because I stay in the weeds with them until the new systems stick.</p>
-      <p>If you've been wondering whether AI could actually make a difference in your business, let's find out together. The audit is free, it's genuinely useful, and there's zero pressure afterward.</p>
+      <p>If you've been wondering whether AI could actually make a difference in your business, let's find out together. The audit is free, genuinely useful, and there's zero pressure afterward.</p>
       <div class="about-tags">
         <span class="tag">AI Workflow Design</span>
         <span class="tag">Process Automation</span>
@@ -694,7 +467,7 @@
       </div>
       <div class="faq-item">
         <div class="faq-q">How long does the audit call take?</div>
-        <div class="faq-a">About 30 minutes. I come prepared based on your form answers so we get straight to the good stuff. We can do it over Zoom or meet in person here in Salt Lake City.</div>
+        <div class="faq-a">30 minutes. I come prepared so we get straight to the good stuff. We can do it over video or meet in person here in Salt Lake City.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">What does working with you typically look like after the audit?</div>
@@ -712,7 +485,7 @@
 <section class="final-cta">
   <h2>Ready to See What AI Can Do for Your Business?</h2>
   <p>The audit is free, it takes 30 minutes, and you'll leave with a real plan. Spots are limited each month.</p>
-  <a href="#audit-form" class="cta-btn">Claim Your Free AI Audit →</a>
+  <a href="https://calendar.app.google/xkcsNaVfipqbezfz5" target="_blank" class="cta-btn">Pick a Time That Works →</a>
 </section>
 
 <!-- FOOTER -->
@@ -722,56 +495,12 @@
 </footer>
 
 <script>
-  // FAQ toggle
   document.querySelectorAll('.faq-q').forEach(q => {
     q.addEventListener('click', () => {
       const item = q.parentElement;
       const wasOpen = item.classList.contains('open');
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
       if (!wasOpen) item.classList.add('open');
-    });
-  });
-
-  // Form submit — wire this to your email capture tool (Mailchimp, ConvertKit, Formspree, etc.)
-  document.getElementById('leadForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const data = {
-      name:      document.getElementById('name').value,
-      email:     document.getElementById('email').value,
-      company:   document.getElementById('company').value,
-      industry:  document.getElementById('industry').value,
-      challenge: document.getElementById('challenge').value,
-      timestamp: new Date().toISOString(),
-      source:    'landing-page'
-    };
-
-    // ── INTEGRATION POINT ──────────────────────────────────────────────────────
-    // Option A — Formspree (easiest, free): replace URL below
-    //   fetch('https://formspree.io/f/YOUR_FORM_ID', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data) })
-    //
-    // Option B — Mailchimp / ConvertKit: add their embed script and call their API
-    //
-    // Option C — Google Sheets via Apps Script: POST to your deployed script URL
-    //
-    // For now, we log to console and show success UI:
-    console.log('New lead:', data);
-    // ──────────────────────────────────────────────────────────────────────────
-
-    document.getElementById('leadForm').style.display = 'none';
-    document.getElementById('successMsg').style.display = 'block';
-
-    // Google Analytics / tracking event (add your GA4 tag to use this)
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'generate_lead', { value: 1, currency: 'USD', form_name: 'ai_audit' });
-    }
-  });
-
-  // Smooth scroll for CTA buttons
-  document.querySelectorAll('a[href="#audit-form"]').forEach(a => {
-    a.addEventListener('click', e => {
-      e.preventDefault();
-      document.getElementById('audit-form').scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
   });
 </script>
