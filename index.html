@@ -15,19 +15,19 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --brand:      #5B4FE8;
-      --brand-dark: #3D34C4;
-      --brand-light:#EEF0FF;
+      --brand:      #0D9488;
+      --brand-dark: #0F766E;
+      --brand-light:#F0FDFA;
       --accent:     #F59E0B;
       --dark:       #0F0E1A;
-      --mid:        #3D3B52;
-      --muted:      #7C7A96;
-      --light:      #F8F8FC;
+      --mid:        #374151;
+      --muted:      #6B7280;
+      --light:      #F7FAFA;
       --white:      #FFFFFF;
-      --border:     #E2E1EF;
+      --border:     #D5E3E2;
       --radius:     12px;
-      --shadow:     0 4px 24px rgba(91,79,232,.12);
-      --shadow-lg:  0 12px 48px rgba(91,79,232,.18);
+      --shadow:     0 4px 24px rgba(13,148,136,.12);
+      --shadow-lg:  0 12px 48px rgba(13,148,136,.18);
     }
 
     html { scroll-behavior: smooth; }
@@ -55,13 +55,13 @@
 
     /* HERO */
     .hero {
-      background: linear-gradient(135deg, #0F0E1A 0%, #1D1B3A 60%, #2A1F6B 100%);
+      background: linear-gradient(135deg, #0F0E1A 0%, #0F2D2A 60%, #134E4A 100%);
       padding: 90px 5vw 100px; position: relative; overflow: hidden;
     }
     .hero::before {
       content: ''; position: absolute; top: -120px; right: -80px;
       width: 520px; height: 520px;
-      background: radial-gradient(circle, rgba(91,79,232,.35) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(13,148,136,.35) 0%, transparent 70%);
       pointer-events: none;
     }
     .hero::after {
@@ -77,9 +77,9 @@
     }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(91,79,232,.25); border: 1px solid rgba(91,79,232,.5);
+      background: rgba(13,148,136,.25); border: 1px solid rgba(13,148,136,.5);
       border-radius: 100px; padding: 6px 16px;
-      font-size: .8rem; font-weight: 700; color: #A89FF5;
+      font-size: .8rem; font-weight: 700; color: #5EEAD4;
       letter-spacing: .5px; text-transform: uppercase; margin-bottom: 24px;
     }
     .hero-badge::before { content: '📍'; }
@@ -89,7 +89,7 @@
     }
     .hero h1 em {
       font-style: normal;
-      background: linear-gradient(90deg, #A89FF5, #F59E0B);
+      background: linear-gradient(90deg, #5EEAD4, #F59E0B);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
     .hero p { font-size: 1.15rem; color: rgba(255,255,255,.72); max-width: 520px; margin-bottom: 36px; }
@@ -127,15 +127,15 @@
       background: var(--brand); color: var(--white);
       border: none; border-radius: 12px; font-size: 1.05rem; font-weight: 800;
       text-decoration: none; cursor: pointer;
-      box-shadow: 0 4px 16px rgba(91,79,232,.35);
+      box-shadow: 0 4px 16px rgba(13,148,136,.35);
       transition: background .2s, transform .15s, box-shadow .2s;
     }
     .book-btn:hover {
       background: var(--brand-dark); transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(91,79,232,.4);
+      box-shadow: 0 8px 24px rgba(13,148,136,.4);
     }
     .booking-privacy {
-  font-size: .75rem; color: #7C7A96; margin-top: 14px; background: transparent;
+  font-size: .75rem; color: #6B7280; margin-top: 14px; background: transparent;
     }
 
     /* TRUST BAR */
@@ -313,7 +313,7 @@
       <a href="https://calendar.app.google/xkcsNaVfipqbezfz5" target="_blank" class="book-btn">
         Pick a Time That Works →
       </a>
-      <p class="booking-privacy" style="color: #7C7A96;">🔒 No spam. Just a calendar invite.</p>
+      <p class="booking-privacy" style="color: #6B7280;">🔒 No spam. Just a calendar invite.</p>
     </div>
   </div>
 </section>
